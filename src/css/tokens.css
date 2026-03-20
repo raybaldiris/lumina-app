@@ -1,0 +1,122 @@
+/* ============================================================
+   LUMINA — Design Tokens
+   Primitivos: colores, tipografía, spacing, radios, sombras
+   Color space: oklch() — perceptually uniform, P3-ready
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap');
+
+:root {
+
+   /* ── COLORES PRIMITIVOS ───────────────────────────────────── */
+
+   --color-resplandor-solar: oklch(90.7% 0.145 95.2);
+   --color-destello-vital: oklch(94.1% 0.094 96);
+   --color-nucleo-encendido: oklch(78.1% 0.136 59.7);
+   --color-alba-serena: oklch(90.6% 0.063 64.5);
+   --color-fuego-interior: oklch(64.8% 0.158 30.7);
+   --color-sombra-protectora: oklch(44% 0.039 35);
+   --color-brisa-luminica: oklch(98.6% 0.024 96.6);
+   --color-piedra-neutral: oklch(83.2% 0.018 92.8);
+   --color-sombra-media: oklch(52% 0.042 35);
+   --color-verde-sereno: oklch(68% 0.15 150);
+   --color-fuego-profundo: oklch(52% 0.158 30.7);
+   --color-blanco-calido: oklch(98.2% 0.022 95);
+
+   /* ── TIPOGRAFÍA ───────────────────────────────────────────── */
+
+   --font-heading: 'Museo Moderno', system-ui, sans-serif;
+   --font-body: 'Nunito Sans', system-ui, sans-serif;
+
+   --text-xs: 0.64rem;
+   --text-sm: 0.8rem;
+   --text-base: 1rem;
+   --text-lg: 1.25rem;
+   --text-xl: 1.563rem;
+   --text-2xl: 1.953rem;
+   --text-3xl: 2.441rem;
+   --text-4xl: 3.052rem;
+   --text-5xl: 3.815rem;
+
+   --leading-tight: 1.15;
+   --leading-snug: 1.35;
+   --leading-base: 1.6;
+   --leading-loose: 1.8;
+
+   --tracking-tight: -0.02em;
+   --tracking-base: 0em;
+   --tracking-wide: 0.05em;
+   --tracking-wider: 0.1em;
+
+   --weight-light: 300;
+   --weight-regular: 400;
+   --weight-medium: 500;
+   --weight-semibold: 600;
+   --weight-bold: 700;
+
+   /* ── SPACING ─────────────────────────────────────────────── */
+
+   --space-1: 0.25rem;
+   --space-2: 0.5rem;
+   --space-3: 0.75rem;
+   --space-4: 1rem;
+   --space-5: 1.25rem;
+   --space-6: 1.5rem;
+   --space-8: 2rem;
+   --space-10: 2.5rem;
+   --space-12: 3rem;
+   --space-16: 4rem;
+   --space-20: 5rem;
+   --space-24: 6rem;
+
+   /* ── BORDER RADIUS ───────────────────────────────────────── */
+
+   --radius-sm: 6px;
+   --radius-md: 12px;
+   --radius-lg: 20px;
+   --radius-xl: 32px;
+   --radius-full: 9999px;
+
+   /* ── SOMBRAS ─────────────────────────────────────────────── */
+
+   --shadow-xs: 0 1px 3px oklch(44% 0.039 35 / 0.06);
+   --shadow-sm: 0 2px 8px oklch(44% 0.039 35 / 0.10);
+   --shadow-md: 0 4px 16px oklch(44% 0.039 35 / 0.12);
+   --shadow-lg: 0 8px 32px oklch(44% 0.039 35 / 0.14);
+   --shadow-brand: 0 4px 24px oklch(90.7% 0.145 95.2 / 0.45);
+
+   /* ── TRANSITIONS ─────────────────────────────────────────── */
+
+   --transition-fast: 150ms ease;
+   --transition-base: 250ms ease;
+   --transition-slow: 400ms ease;
+   --transition-spring: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+   --transition-smooth: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+   /* ── Z-INDEX ─────────────────────────────────────────────── */
+
+   --z-base: 0;
+   --z-raised: 10;
+   --z-overlay: 100;
+   --z-modal: 200;
+   --z-toast: 300;
+
+}
+
+/* ── FALLBACK — browsers sin oklch ───────────────────────── */
+@supports not (color: oklch(0% 0 0)) {
+   :root {
+      --color-resplandor-solar: #FEDF64;
+      --color-destello-vital: #FEECA3;
+      --color-nucleo-encendido: #F7A156;
+      --color-alba-serena: #FED8B5;
+      --color-fuego-interior: #DE6350;
+      --color-sombra-protectora: #664B44;
+      --color-brisa-luminica: #FFFBE9;
+      --color-piedra-neutral: #CCC8BB;
+      --color-sombra-media: #7F6159;
+      --color-verde-sereno: #45B164;
+      --color-fuego-profundo: #B23A2A;
+      --color-blanco-calido: #FEF9E9;
+   }
+}

@@ -1,0 +1,65 @@
+/* ============================================================
+   LUMINA — Semantic Tokens
+   Roles de UI: qué color hace qué trabajo
+   Depende de tokens.css — siempre importar después
+   ============================================================ */
+
+:root {
+
+   /* ── BACKGROUNDS ─────────────────────────────────────────── */
+
+   --bg-base: var(--color-brisa-luminica);
+   --bg-surface: var(--color-blanco-calido);
+   --bg-surface-warm: var(--color-alba-serena);
+   --bg-inverse: var(--color-sombra-protectora);
+
+   /* ── BRAND ───────────────────────────────────────────────── */
+
+   --brand-primary: var(--color-resplandor-solar);
+   --brand-secondary: var(--color-nucleo-encendido);
+   --brand-accent: var(--color-fuego-interior);
+
+   /* ── TEXTO ───────────────────────────────────────────────── */
+
+   --text-primary: var(--color-sombra-protectora);
+   --text-secondary: var(--color-sombra-media);
+   --text-tertiary: var(--color-piedra-neutral);
+   --text-on-dark: var(--color-brisa-luminica);
+   --text-on-brand: var(--color-sombra-protectora);
+
+   /* ── BORDERS ─────────────────────────────────────────────── */
+
+   --border-default: var(--color-alba-serena);
+   --border-strong: var(--color-nucleo-encendido);
+   --border-subtle: oklch(83.2% 0.018 92.8 / 0.4);
+
+   /* ── ESTADOS ─────────────────────────────────────────────── */
+   /* ⚠️  brand-secondary y brand-accent: solo bordes e íconos  */
+
+   --state-available: var(--color-verde-sereno);
+   --state-full: var(--color-piedra-neutral);
+   --state-selected: var(--color-resplandor-solar);
+   --state-error: var(--color-fuego-profundo);
+
+}
+
+/* ── ESTILOS GLOBALES BASE ───────────────────────────────── */
+
+body {
+   background-color: var(--bg-base);
+   color: var(--text-primary);
+   font-family: var(--font-body);
+   font-size: var(--text-base);
+   line-height: var(--leading-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--font-heading);
+   line-height: var(--leading-tight);
+   color: var(--text-primary);
+}
