@@ -4,24 +4,23 @@
    Color space: oklch() — perceptually uniform, P3-ready
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap');
 
 :root {
 
    /* ── COLORES PRIMITIVOS ───────────────────────────────────── */
 
-   --color-resplandor-solar: oklch(90.7% 0.145 95.2);
-   --color-destello-vital: oklch(94.1% 0.094 96);
-   --color-nucleo-encendido: oklch(78.1% 0.136 59.7);
-   --color-alba-serena: oklch(90.6% 0.063 64.5);
-   --color-fuego-interior: oklch(64.8% 0.158 30.7);
-   --color-sombra-protectora: oklch(44% 0.039 35);
-   --color-brisa-luminica: oklch(98.6% 0.024 96.6);
-   --color-piedra-neutral: oklch(83.2% 0.018 92.8);
-   --color-sombra-media: oklch(52% 0.042 35);
-   --color-verde-sereno: oklch(68% 0.15 150);
-   --color-fuego-profundo: oklch(52% 0.158 30.7);
-   --color-blanco-calido: oklch(98.2% 0.022 95);
+   --resplandor-solar: oklch(90.7% 0.145 95.2);
+   --destello-vital: oklch(94.1% 0.094 96);
+   --nucleo-encendido: oklch(78.1% 0.136 59.7);
+   --alba-serena: oklch(90.6% 0.063 64.5);
+   --fuego-interior: oklch(64.8% 0.158 30.7);
+   --sombra-protectora: oklch(44% 0.039 35);
+   --brisa-luminica: oklch(98.6% 0.024 96.6);
+   --piedra-neutral: oklch(83.2% 0.018 92.8);
+   --sombra-media: oklch(52% 0.042 35);
+   --verde-sereno: oklch(68% 0.15 150);
+   --fuego-profundo: oklch(52% 0.158 30.7);
+   --blanco-calido: oklch(98.2% 0.022 95);
 
    /* ── TIPOGRAFÍA ───────────────────────────────────────────── */
 
@@ -106,17 +105,17 @@
 /* ── FALLBACK — browsers sin oklch ───────────────────────── */
 @supports not (color: oklch(0% 0 0)) {
    :root {
-      --color-resplandor-solar: #FEDF64;
-      --color-destello-vital: #FEECA3;
-      --color-nucleo-encendido: #F7A156;
-      --color-alba-serena: #FED8B5;
-      --color-fuego-interior: #DE6350;
-      --color-sombra-protectora: #664B44;
-      --color-brisa-luminica: #FFFBE9;
-      --color-piedra-neutral: #CCC8BB;
-      --color-sombra-media: #7F6159;
-      --color-verde-sereno: #45B164;
-      --color-fuego-profundo: #B23A2A;
-      --color-blanco-calido: #FEF9E9;
+      --resplandor-solar: #FEDF64;
+      --destello-vital: #FEECA3;
+      --nucleo-encendido: #F7A156;
+      --alba-serena: #FED8B5;
+      --fuego-interior: #DE6350;
+      --sombra-protectora: #664B44;
+      --brisa-luminica: #FFFBE9;
+      --piedra-neutral: #CCC8BB;
+      --sombra-media: #7F6159;
+      --verde-sereno: #45B164;
+      --fuego-profundo: #B23A2A;
+      --blanco-calido: #FEF9E9;
    }
 }

@@ -8,38 +8,38 @@
 
    /* ── BACKGROUNDS ─────────────────────────────────────────── */
 
-   --bg-base: var(--color-brisa-luminica);
-   --bg-surface: var(--color-blanco-calido);
-   --bg-surface-warm: var(--color-alba-serena);
-   --bg-inverse: var(--color-sombra-protectora);
+   --bg-base: var(--brisa-luminica);
+   --bg-surface: var(--blanco-calido);
+   --bg-surface-warm: var(--alba-serena);
+   --bg-inverse: var(--sombra-protectora);
 
    /* ── BRAND ───────────────────────────────────────────────── */
 
-   --brand-primary: var(--color-resplandor-solar);
-   --brand-secondary: var(--color-nucleo-encendido);
-   --brand-accent: var(--color-fuego-interior);
+   --brand-primary: var(--resplandor-solar);
+   --brand-secondary: var(--nucleo-encendido);
+   --brand-accent: var(--fuego-interior);
 
    /* ── TEXTO ───────────────────────────────────────────────── */
 
-   --text-primary: var(--color-sombra-protectora);
-   --text-secondary: var(--color-sombra-media);
-   --text-tertiary: var(--color-piedra-neutral);
-   --text-on-dark: var(--color-brisa-luminica);
-   --text-on-brand: var(--color-sombra-protectora);
+   --text-primary: var(--sombra-protectora);
+   --text-secondary: var(--sombra-media);
+   --text-tertiary: var(--piedra-neutral);
+   --text-on-dark: var(--brisa-luminica);
+   --text-on-brand: var(--sombra-protectora);
 
    /* ── BORDERS ─────────────────────────────────────────────── */
 
-   --border-default: var(--color-alba-serena);
-   --border-strong: var(--color-nucleo-encendido);
+   --border-default: var(--alba-serena);
+   --border-strong: var(--nucleo-encendido);
    --border-subtle: oklch(83.2% 0.018 92.8 / 0.4);
 
    /* ── ESTADOS ─────────────────────────────────────────────── */
    /* ⚠️  brand-secondary y brand-accent: solo bordes e íconos  */
 
-   --state-available: var(--color-verde-sereno);
-   --state-full: var(--color-piedra-neutral);
-   --state-selected: var(--color-resplandor-solar);
-   --state-error: var(--color-fuego-profundo);
+   --state-available: var(--verde-sereno);
+   --state-full: var(--piedra-neutral);
+   --state-selected: var(--resplandor-solar);
+   --state-error: var(--fuego-profundo);
 
 }
 
